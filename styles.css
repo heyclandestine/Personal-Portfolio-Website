@@ -1,0 +1,407 @@
+/* General and background */
+
+* {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    background: 
+        radial-gradient(
+        farthest-side at bottom left,
+        rgba(255, 200, 220), 
+        transparent 90%
+        ),
+        radial-gradient(
+        circle at bottom right,
+        rgba(200, 220, 255), 
+        transparent 80%
+        ),
+        radial-gradient(
+        farthest-side at top left,
+        rgb(191, 255, 210), 
+        transparent 80%
+        ),
+        radial-gradient(
+        circle at top right,
+        rgba(255, 200, 220), 
+        transparent 90%
+        ),
+        #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+b {
+    font-weight: bold;
+}
+
+/* NAVBAR */
+
+#navbar {
+    background: radial-gradient(
+        circle at bottom right,
+        rgba(200, 220, 255),
+        transparent 100%
+        ),
+        radial-gradient(
+        circle at top left,
+        rgb(243, 255, 191)
+        );
+    border-radius: 0px 0px 40px 40px;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+#name {
+    margin: auto 0px;
+    padding-left: 30px;
+    cursor: default;
+}
+
+#page-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    gap: 40px;
+}
+
+#page-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+#page-nav a:hover {
+    color: goldenrod;
+}
+
+#social-nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 30px;
+}
+
+#social-nav a {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    padding: 0px 10px;
+    margin: 0px 10px;
+    gap: 10px;
+    background-color: black;
+    border-radius: 25% 10%;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#social-nav .github-link:hover {
+    background-color: #ffffff;
+    background-image: radial-gradient(
+        circle at bottom left,
+        rgb(171, 86, 252), transparent 100%),
+        radial-gradient(
+        circle at top right,
+        rgb(76, 1, 99), transparent 100%)
+        ;
+    color: aliceblue;
+    transition: all 1s;
+}
+
+#social-nav .linkedin-link:hover {
+    background-color: #ffffff;
+    background-image: radial-gradient(
+        circle at bottom left,
+        rgb(115, 134, 223), transparent 100%),
+        radial-gradient(
+        circle at top right,
+        rgb(1, 35, 99), transparent 100%)
+        ;
+     color: aliceblue;
+    transition: all 1s;
+}
+
+#social-nav .instagram-link:hover {
+    background-color: #ffffff;
+    background-image: radial-gradient(
+        circle at bottom left,
+        rgb(255, 220, 128), transparent 100%),
+        radial-gradient(
+        circle at top right,
+        rgb(225, 48, 108), transparent 100%);
+    color: aliceblue;
+    transition: all 1s;
+}
+
+/* HERO */
+
+#hero {
+    display: flex;
+    margin-top: 150px;
+    align-items: center;
+    justify-content: center;
+    gap: 25%;
+}
+
+#hero h2, h1, p {
+    margin: 0px;
+}
+
+#hero h2 {
+    color: gray;
+}
+
+#hero h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 8rem;
+}
+
+#hero p {
+    font-size: 1.5rem;
+}
+
+.hero-right {
+    display: block;
+    align-items: center;
+}
+
+.hero-right img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* ABOUT ME */
+
+#about-me {
+    margin: 50px auto;
+    text-align: center;
+    width: 1000px;
+}
+
+#about-me h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+#about-me p {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    text-align: left;
+    padding-left: 5px;
+}
+
+#about-me p:last-of-type {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Education */
+
+#education {
+    width: auto;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#education h1 {
+    font-weight: bold;
+}
+
+#school-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin: 30px 50%;
+    gap: 60px;
+}
+
+.lsu-section, .ou-section, .cs-section, .other-section {
+    background:  linear-gradient(135deg, rgba(255, 255, 255, 0.767) 0%, transparent 90%);
+    border: 6px solid white;
+    border-radius: 20px;
+    width: 500px;
+    height: 330px;
+}
+
+.cs-section img {
+    background-color: #ffffff;
+    
+}
+
+.edu-header {
+    display: flex;
+}
+
+#school-section img {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 20px 20px 0px 20px;
+    justify-content: flex-start;
+    border-radius: 25%;
+    object-fit: cover;
+}
+
+#school-section h4 {
+    margin: auto;
+    font-size: 1.3rem;
+}
+
+#school-section p {
+    justify-content: left;
+    display: block;
+    font-size: 1rem;
+    text-align: left;
+    padding: 5px 0 0 30px;
+}
+
+#school-section p:first-of-type {
+    padding-top: 20px;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+    width: auto;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#projects h1 {
+    font-weight: bold;
+}
+
+#project-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin: 30px 50%;
+    gap: 60px;
+}
+
+.html-css-section, .javascript-section, .python-section, .cpp-section {
+    background:  linear-gradient(135deg, rgba(255, 255, 255, 0.767) 0%, transparent 90%);
+    border: 6px solid white;
+    border-radius: 20px;
+    width: 500px;
+    height: 330px;
+}
+
+.html-css-section img, .python-section img, .cpp-section img {
+    background-color: #ffffff;
+    
+}
+
+.project-header {
+    display: flex;
+}
+
+#project-section img {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 20px 20px 0px 20px;
+    justify-content: flex-start;
+    border-radius: 25%;
+    object-fit: cover;
+}
+
+#project-section h4 {
+    margin: auto;
+    font-size: 1.3rem;
+}
+
+#project-section p {
+    justify-content: left;
+    display: block;
+    font-size: 1rem;
+    text-align: left;
+    padding: 5px 0 0 30px;
+}
+
+#project-section p:first-of-type {
+    padding-top: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: black;
+}
+
+.project-link:hover {
+    color: blue;
+}
+
+/* Contact Section */
+
+/* Style inputs */
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+/* Style the container/contact section */
+#contact-me {
+    display: block;
+    width: 40%;
+    margin: auto;
+    background:  linear-gradient(135deg, rgba(255, 255, 255, 0.767) 0%, transparent 30%,  transparent 70%, white 100%);
+    text-align: left;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    transition: box-shadow 0.6s ease-in-out;
+}
+
+#contact-me:hover {
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(255, 255, 255, 0.22) 0px 0px 20px 10px;
+}
+
+#contact-me h1 {
+    padding-bottom: 20px;
+}
+
+.name, .email, .email-body {
+    display: block;
+    padding: 10px 0px;
+}
+
+.email-form > form > button {
+    display: block;
+    justify-content: center;
+    margin: auto;
+    background-color: white;
+}
+
+.email-form > form > button:hover {
+    background: #94f388;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1400px) {
+
+}
